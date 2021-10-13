@@ -16,8 +16,7 @@ export const useFetch = (url) => {
 
         fetch(url)
             .then(res => res.json())
-            .then(data => {
-                
+            .then(data => {       
                     setTimeout(() => {
                         if(isMounted.current){
                             setState({
@@ -28,8 +27,6 @@ export const useFetch = (url) => {
                         }
                     }, 2000);
             }).catch(onrejected => {
-                //console.log(onrejected.error);
-
                 setState({
                     loading: false,
                     error: onrejected.error,
