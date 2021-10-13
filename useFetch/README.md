@@ -16,7 +16,7 @@ The url used to retrieve the data.
 # Return properties
 ## state
 The returned data obtained by the fetch function.
-```json
+```javascript
 {
     loading: false,
     error: null,

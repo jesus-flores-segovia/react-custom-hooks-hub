@@ -30,5 +30,5 @@ const {values, handleInputChange, reset} = useForm({name: "Jesús", surname: "Fl
 ```
 ## Configuring the input
 ```html
-<input name="surname" type="text" id="surname" value={password} onChange={handleInputChange}/>
+<input name="surname" type="text" id="surname" value={surname} onChange={handleInputChange}/>
 ```
